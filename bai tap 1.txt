@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1 - Sử dụng các tab cơ bản</title>
+</head>
+<body>
+    <h1>BÀI TẬP HTML CƠ BẢN</h1>
+    <h2>Bài 1: Sử dụng các tab cơ bản</h2>
+
+    <p>Lập trình web</p>
+    <p>Chào mừng các bạn đến với ngôn ngữ HTML</p>
+</body>
+</html>
