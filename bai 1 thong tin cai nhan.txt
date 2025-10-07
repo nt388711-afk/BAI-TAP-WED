@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin cá nhân</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Thông tin cá nhân</legend>
+      <label>Họ và tên:</label>
+      <input type="text" name="hoten"><br>
+      <label>Email:</label>
+      <input type="email" name="email"><br>
+      <label>Mật khẩu:</label>
+      <input type="password" name="matkhau">
+    </fieldset>
+
+    <fieldset>
+      <legend>Giới tính</legend>
+      <input type="radio" name="gioitinh" value="nam"> Nam
+      <input type="radio" name="gioitinh" value="nu"> Nữ
+      <input type="radio" name="gioitinh" value="khac"> Khác
+    </fieldset>
+
+    <fieldset>
+      <legend>Sở thích</legend>
+      <input type="checkbox" name="sothich" value="amnhac"> Âm nhạc<br>
+      <input type="checkbox" name="sothich" value="thethao"> Thể thao<br>
+      <input type="checkbox" name="sothich" value="dulich"> Du lịch
+    </fieldset>
+
+    <div class="button">
+      <input type="submit" value="Đăng ký">
+    </div>
+  </form>
+</body>
+</html>
