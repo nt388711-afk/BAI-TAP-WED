@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device‑width, initial-scale=1.0" />
+  <title>Đăng ký môn học</title>
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Đăng ký môn học</h2>
+    <form action="process_registration.php" method="post">
+      <!-- Thông tin sinh viên -->
+      <div class="form-group">
+        <label for="studentId">Mã SV:</label>
+        <input type="text" id="studentId" name="studentId" required />
+      </div>
+      <div class="form-group">
+        <label for="fullName">Họ tên:</label>
+        <input type="text" id="fullName" name="fullName" required />
+      </div>
+
+      <!-- Chọn môn học -->
+      <div class="form-group">
+        <label for="course">Chọn môn học:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Chọn môn học --</option>
+          <option value="Toán">Toán</option>
+          <option value="Văn">Văn</option>
+          <option value="Lý">Lý</option>
+          <option value="Hóa">Hóa</option>
+          <!-- Bạn có thể thêm các môn khác -->
+        </select>
+      </div>
+
+      <!-- Ghi chú -->
+      <div class="form-group">
+        <label for="note">Ghi chú:</label>
+        <textarea id="note" name="note"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Đăng ký</button>
+    </form>
+  </div>
+
+  <script>
+    // Tuỳ chọn: bạn có thể thêm kiểm tra form bằng JS trước khi gửi
+    document.querySelector("form").addEventListener("submit", function(e) {
+      const studentId = document.getElementById("studentId").value.trim();
+      const fullName = document.getElementById("fullName").value.trim();
+      const course = document.getElementById("course").value;
